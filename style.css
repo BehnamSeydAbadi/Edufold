@@ -1,0 +1,120 @@
+* {
+   /* Resets the margin of all elements to 0, removing any default spacing 
+      that browsers may apply */
+   margin: 0;
+
+   /* Resets the padding of all elements to 0, removing any default padding 
+      that browsers may apply */
+   padding: 0;
+
+   /* Sets the font family for all elements to "Poppins", with a fallback 
+      to a generic sans-serif font if "Poppins" is not available */
+   font-family: "Poppins", sans-serif;
+}
+
+.header {
+   /* Sets the minimum height of the header to 100% of the viewport height */
+   min-height: 100vh;
+
+   /* Sets the width of the header to 100% of its containing element */
+   width: 100%;
+
+   /* Applies a linear gradient overlay with a semi-transparent dark color 
+       on top of the background image, which is specified next */
+   background-image: linear-gradient(rgba(4, 19, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.png);
+
+   /* Centers the background image within the header */
+   background-position: center;
+
+   /* Scales the background image to cover the entire header area, 
+       maintaining its aspect ratio */
+   background-size: cover;
+
+   /* Positions the header relative to its normal position, allowing 
+       for absolutely positioned child elements to be positioned relative to it */
+   position: relative;
+}
+
+nav {
+   /* Sets the display of the nav element to flex, enabling the use of flexbox layout */
+   display: flex;
+
+   /* Adds padding of 2% on the top and bottom, and 6% on the left and right 
+      of the nav element */
+   padding: 2% 6%;
+
+   /* Distributes space between flex items, placing the first item at the start 
+      and the last item at the end of the nav container */
+   justify-content: space-between;
+
+   /* Aligns flex items vertically in the center of the nav container */
+   align-items: center;
+}
+
+nav img {
+   /* Sets the width of all images within the nav element to 150 pixels */
+   width: 150px;
+}
+
+.nav-links {
+   /* Allows the .nav-links element to grow and fill available space in the flex container */
+   flex: 1;
+
+   /* Aligns the text within the .nav-links element to the right */
+   text-align: right;
+}
+
+.nav-links ul li {
+   /* Removes the default bullet points from list items within the .nav-links */
+   list-style: none;
+
+   /* Displays list items in a horizontal line by using inline-block */
+   display: inline-block;
+
+   /* Adds padding of 8 pixels on the top and bottom, and 12 pixels on the left and right 
+      to each list item */
+   padding: 8px 12px;
+
+   /* Positions the list item relative to its normal position, allowing for 
+      absolutely positioned child elements to be positioned relative to it */
+   position: relative;
+}
+
+.nav-links ul li a {
+   /* Sets the text color of links within the list items to white */
+   color: #fff;
+
+   /* Removes the default underline from links */
+   text-decoration: none;
+
+   /* Sets the font size of the links to 13 pixels */
+   font-size: 13px;
+}
+
+.nav-links ul li::after {
+   /* Creates a pseudo-element after each list item in the .nav-links */
+   content: '';
+
+   /* Sets the initial width of the pseudo-element to 0%, making it invisible */
+   width: 0%;
+
+   /* Sets the height of the pseudo-element to 2 pixels */
+   height: 2px;
+
+   /* Sets the background color of the pseudo-element to a shade of red (#f44336) */
+   background-color: #f44336;
+
+   /* Displays the pseudo-element as a block element, allowing it to take up space */
+   display: block;
+
+   /* Centers the pseudo-element horizontally within the list item */
+   margin: auto;
+
+   /* Applies a transition effect to the width property over 0.5 seconds */
+   transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+   /* On hover, expands the width of the pseudo-element to 100%, creating an underline effect */
+   width: 100%;
+}
