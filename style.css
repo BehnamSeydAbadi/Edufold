@@ -12,6 +12,10 @@
    font-family: "Poppins", sans-serif;
 }
 
+:root {
+   --red-color: #f44336;
+}
+
 .header {
    /* Sets the minimum height of the header to 100% of the viewport height */
    min-height: 100vh;
@@ -101,8 +105,8 @@ nav img {
    /* Sets the height of the pseudo-element to 2 pixels */
    height: 2px;
 
-   /* Sets the background color of the pseudo-element to a shade of red (#f44336) */
-   background-color: #f44336;
+   /* Sets the background color of the pseudo-element to a shade of red (--red-color) */
+   background-color: var(--red-color);
 
    /* Displays the pseudo-element as a block element, allowing it to take up space */
    display: block;
@@ -117,4 +121,80 @@ nav img {
 .nav-links ul li:hover::after {
    /* On hover, expands the width of the pseudo-element to 100%, creating an underline effect */
    width: 100%;
+}
+
+.text-box {
+   /* Sets the width of the text box to 90% of its containing element */
+   width: 90%;
+
+   /* Sets the text color to white */
+   color: #fff;
+
+   /* Positions the text box absolutely within its nearest positioned ancestor */
+   position: absolute;
+
+   /* Positions the top edge of the text box 50% from the top of its containing element */
+   top: 50%;
+
+   /* Positions the left edge of the text box 50% from the left of its containing element */
+   left: 50%;
+
+   /* Offsets the text box by 50% of its own width and height to center it */
+   transform: translate(-50%, -50%);
+
+   /* Centers the text horizontally within the text box */
+   text-align: center;
+}
+
+.text-box h1 {
+   /* Sets the font size of the h1 element within the text box to 62 pixels */
+   font-size: 62px;
+}
+
+.text-box p {
+   /* Sets the top and bottom margin of the paragraph to 10 pixels and 40 pixels, respectively */
+   margin: 10px 0 40px;
+
+   /* Sets the font size of the paragraph to 14 pixels */
+   font-size: 14px;
+
+   /* Sets the text color of the paragraph to white */
+   color: #fff;
+}
+
+.hero-btn {
+   /* Displays the button as an inline-block element */
+   display: inline-block;
+
+   /* Removes the default underline from the link */
+   text-decoration: none;
+
+   /* Sets the text color of the button to white */
+   color: #fff;
+
+   /* Adds a white border around the button */
+   border: 1px solid #fff;
+
+   /* Adds padding of 12 pixels vertically and 34 pixels horizontally inside the button */
+   padding: 12px 34px;
+
+   /* Sets the background of the button to transparent */
+   background: transparent;
+
+   /* Positions the button relative to its normal position */
+   position: relative;
+
+   /* Changes the cursor to a pointer when hovering over the button */
+   cursor: pointer;
+}
+
+.hero-btn:hover {
+   /* Changes the border color to a red shade when the button is hovered over */
+   border: 1px solid var(--red-color);
+
+   /* Changes the background color to a red shade when the button is hovered over */
+   background: var(--red-color);
+
+   /* Adds a transition effect for the background and border color changes over 1 second */
+   transition: 1s;
 }
