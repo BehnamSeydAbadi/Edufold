@@ -198,3 +198,74 @@ nav img {
    /* Adds a transition effect for the background and border color changes over 1 second */
    transition: 1s;
 }
+
+nav .fa-solid {
+   /* Hides the .fa-solid icons in the navigation by default */
+   display: none;
+}
+
+@media(max-width: 700px) {
+
+   /* Sets the font size of the h1 element within the text box to 20 pixels for screens smaller than 700px */
+   .text-box h1 {
+      font-size: 20px;
+   }
+
+   /* Displays each list item in the navigation links as a block for smaller screens */
+   .nav-links ul li {
+      display: block;
+   }
+
+   /* Adds padding of 30 pixels to the unordered list within the navigation links */
+   .nav-links ul {
+      padding: 30px;
+   }
+
+   /* Styles the navigation links container for smaller screens */
+   .nav-links {
+      /* Positions the navigation links absolutely */
+      position: absolute;
+
+      /* Sets the background color using a CSS variable */
+      background: var(--red-color);
+
+      /* Sets the height to 100% of the viewport height */
+      height: 100vh;
+
+      /* Sets the width of the navigation links to 200 pixels */
+      width: 200px;
+
+      /* Positions the top edge at the top of the viewport */
+      top: 0;
+
+      /* Positions the right edge off-screen to the right */
+      right: -200px;
+
+      /* Aligns text to the left */
+      text-align: left;
+
+      /* Sets the stacking order of the navigation links */
+      z-index: 2;
+
+      /* Adds a transition effect for changes over 1 second */
+      transition: 1s;
+   }
+
+   /* Displays the .fa-solid icons in the navigation for smaller screens */
+   nav .fa-solid {
+      /* Makes the .fa-solid icons visible */
+      display: block;
+
+      /* Sets the color of the icons to white */
+      color: #fff;
+
+      /* Adds a margin of 10 pixels around the icons */
+      margin: 10px;
+
+      /* Sets the font size of the icons to 22 pixels */
+      font-size: 22px;
+
+      /* Changes the cursor to a pointer when hovering over the icons */
+      cursor: pointer;
+   }
+}
