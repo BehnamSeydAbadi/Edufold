@@ -269,3 +269,109 @@ nav .fa-solid {
       cursor: pointer;
    }
 }
+
+/*------Course - Begin------*/
+
+/* The .course class styles the main container for the course section. It sets the width to 80% of the parent element, centers it with auto margins, aligns text to the center, and adds 100 pixels of padding at the top. */
+.course {
+   /* Sets the width of the course container to 80% of its parent */
+   width: 80%;
+
+   /* Centers the course container horizontally */
+   margin: auto;
+
+   /* Aligns text to the center */
+   text-align: center;
+
+   /* Adds 100 pixels of padding at the top */
+   padding-top: 100px;
+}
+
+/* The h1 selector styles the main heading of the course section. It sets the font size to 36 pixels and the font weight to 600 (semi-bold). */
+h1 {
+   /* Sets the font size of the heading to 36 pixels */
+   font-size: 36px;
+
+   /* Sets the font weight to semi-bold */
+   font-weight: 600;
+}
+
+/* The p selector styles paragraph text within the course section. It sets the text color to a light gray, font size to 14 pixels, font weight to 300 (light), line height to 22 pixels, and adds 10 pixels of padding. */
+p {
+   /* Sets the text color to a light gray */
+   color: #777;
+
+   /* Sets the font size to 14 pixels */
+   font-size: 14px;
+
+   /* Sets the font weight to light */
+   font-weight: 300;
+
+   /* Sets the line height to 22 pixels for better readability */
+   line-height: 22px;
+
+   /* Adds 10 pixels of padding around the paragraph */
+   padding: 10px;
+}
+
+/* The .row class styles a container for rows of course columns. It adds a top margin of 5% and uses flexbox to arrange child elements in a row, justifying space between them. */
+.row {
+   /* Adds a top margin of 5% to the row */
+   margin-top: 5%;
+   /* Enables flexbox layout for the row */
+   display: flex;
+   /* Distributes space between child elements evenly */
+   justify-content: space-between;
+}
+
+/* The .course-col class styles individual course columns. It sets a base width of 31%, a light background color, rounded corners, a bottom margin, padding, box-sizing, and a transition effect for hover states. */
+.course-col {
+   /* Sets the base width of each course column to 31% */
+   flex-basis: 31%;
+
+   /* Sets a light pink background color for the course column */
+   background: #fff3f3;
+
+   /* Rounds the corners of the course column */
+   border-radius: 10px;
+
+   /* Adds a bottom margin of 5% to separate columns */
+   margin-bottom: 5%;
+
+   /* Adds 20 pixels of vertical padding and 12 pixels of horizontal padding */
+   padding: 20px 12px;
+
+   /* Includes padding and border in the element's total width and height */
+   box-sizing: border-box;
+
+   /* Adds a transition effect for changes in properties over 0.5 seconds */
+   transition: 0.5s;
+}
+
+/* The h3 selector styles subheadings within the course columns. It centers the text, sets a semi-bold font weight, and adds vertical margins. */
+h3 {
+   /* Centers the text of the subheading */
+   text-align: center;
+
+   /* Sets the font weight to semi-bold */
+   font-weight: 600;
+
+   /* Adds a vertical margin of 10 pixels above and below the subheading */
+   margin: 10px 0;
+}
+
+/* The .course-col:hover selector adds a shadow effect to course columns when hovered over, enhancing the visual feedback for users. */
+.course-col:hover {
+   /* Adds a shadow effect around the course column on hover */
+   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* The media query applies styles for screens with a maximum width of 700 pixels. It changes the flex direction of the .row class to column, stacking the course columns vertically. */
+@media(max-width: 700px) {
+   .row {
+      /* Changes the flex direction to column for smaller screens */
+      flex-direction: column;
+   }
+}
+
+/*------Course - End------*/
