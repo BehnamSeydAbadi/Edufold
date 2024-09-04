@@ -499,3 +499,62 @@ h3 {
 }
 
 /*------ Campus - End ------*/
+
+/*------ Facilities - Begin ------*/
+
+/* The .facilities class styles the main container for the facilities section. It sets the width to 80% of the parent element, centers it with auto margins, aligns text to the center, and adds 100 pixels of padding at the top. */
+.facilities {
+   width: 80%;
+   /* Sets the width of the facilities container to 80% of its parent */
+   margin: auto;
+   /* Centers the facilities container horizontally */
+   text-align: center;
+   /* Aligns text to the center */
+   padding-top: 100px;
+   /* Adds 100 pixels of padding at the top */
+}
+
+/* The .facilities-col class styles individual facilities columns. It sets a base width of 31%, rounds the corners, adds a bottom margin, and aligns text to the left. */
+.facilities-col {
+   /* Sets the base width of each facilities column to 31% */
+   flex-basis: 31%;
+
+   /* Rounds the corners of the facilities column */
+   border-radius: 10px;
+
+   /* Adds a bottom margin of 5% to separate columns */
+   margin-bottom: 5%;
+
+   /* Aligns text to the left within the column */
+   text-align: left;
+}
+
+/* The .facilities-col img selector styles images within facilities columns. It sets the width to 100% and rounds the corners of the images. */
+.facilities-col img {
+   /* Sets the image width to 100% of its parent column */
+   width: 100%;
+
+   /* Rounds the corners of the image */
+   border-radius: 10px;
+}
+
+/* The .facilities-col p selector styles paragraph text within facilities columns. It removes any padding around the paragraph. */
+.facilities-col p {
+   /* Removes padding from the paragraph */
+   padding: 0;
+}
+
+/* The .facilities-col h3 selector styles headings within facilities columns. It adds top and bottom margins for spacing and aligns the text to the left. */
+.facilities-col h3 {
+   /* Adds a top margin of 16 pixels to the heading */
+   margin-top: 16px;
+
+   /* Adds a bottom margin of 15 pixels to the heading */
+   margin-bottom: 15px;
+
+   /* Aligns the heading text to the left */
+   text-align: left;
+}
+
+
+/*------ Facilities - End ------*/
