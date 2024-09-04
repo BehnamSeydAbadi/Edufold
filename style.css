@@ -16,6 +16,8 @@
    --red-color: #f44336;
 }
 
+/*------ Header - Begin ------*/
+
 .header {
    /* Sets the minimum height of the header to 100% of the viewport height */
    min-height: 100vh;
@@ -270,7 +272,10 @@ nav .fa-solid {
    }
 }
 
-/*------Course - Begin------*/
+/*------ Header - End ------*/
+
+
+/*------ Course - Begin ------*/
 
 /* The .course class styles the main container for the course section. It sets the width to 80% of the parent element, centers it with auto margins, aligns text to the center, and adds 100 pixels of padding at the top. */
 .course {
@@ -374,4 +379,123 @@ h3 {
    }
 }
 
-/*------Course - End------*/
+/*------ Course - End ------*/
+
+
+/*------ Campus - Begin ------*/
+
+/* The .campus class styles the main container for the campus section. It sets the width to 80% of the parent element, centers it with auto margins, aligns text to the center, and adds a top margin of 50 pixels. */
+.campus {
+   /* Sets the width of the campus container to 80% of its parent */
+   width: 80%;
+
+   /* Centers the campus container horizontally */
+   margin: auto;
+
+   /* Aligns text to the center */
+   text-align: center;
+
+   /* Adds a top margin of 50 pixels */
+   margin-top: 50px;
+}
+
+/* The .campus-col class styles individual campus columns. It sets a base width of 32%, rounds the corners, adds a bottom margin, and positions the element relative to allow absolute positioning of child elements. */
+.campus-col {
+   /* Sets the base width of each campus column to 32% */
+   flex-basis: 32%;
+
+   /* Rounds the corners of the campus column */
+   border-radius: 10px;
+
+   /* Adds a bottom margin of 30 pixels to separate columns */
+   margin-bottom: 30px;
+
+   /* Sets the position to relative for absolute positioning of child elements */
+   position: relative;
+
+   /* Hides any overflow content that exceeds the bounds of the column */
+   overflow: hidden;
+}
+
+/* The .campus-col img selector styles images within campus columns. It sets the width to 100% and ensures the image is displayed as a block element. */
+.campus-col img {
+   /* Sets the image width to 100% of its parent column */
+   width: 100%;
+
+   /* Ensures the image is displayed as a block element, removing any inline spacing */
+   display: block;
+}
+
+/* The .layer class styles an overlay layer that will be positioned over the campus column. It sets the background to transparent, takes up the full height and width, and positions it absolutely within the column. */
+.layer {
+   /* Sets the background to transparent initially */
+   background: transparent;
+
+   /* Sets the height to 100% of the parent column */
+   height: 100%;
+
+   /* Sets the width to 100% of the parent column */
+   width: 100%;
+
+   /* Positions the layer absolutely within the campus column */
+   position: absolute;
+
+   /* Aligns the layer to the top of the column */
+   top: 0;
+
+   /* Aligns the layer to the left of the column */
+   left: 0;
+
+   /* Adds a transition effect for changes in properties over 0.5 seconds */
+   transition: 0.5s;
+}
+
+/* The .layer:hover selector changes the background color of the layer when hovered over, providing a visual effect. */
+.layer:hover {
+   /* Sets a semi-transparent red background on hover */
+   background: rgba(226, 0, 0, 0.7);
+}
+
+/* The .layer h3 selector styles the heading within the overlay layer. It sets the width to 100%, font weight to 500, text color to white, font size to 26 pixels, and positions it at the bottom center of the layer. */
+.layer h3 {
+   /* Sets the width of the heading to 100% of the layer */
+   width: 100%;
+
+   /* Sets the font weight to medium */
+   font-weight: 500;
+
+   /* Sets the text color to white */
+   color: #fff;
+
+   /* Sets the font size to 26 pixels */
+   font-size: 26px;
+
+   /* Positions the heading at the bottom of the layer */
+   bottom: 0;
+
+   /* Centers the heading horizontally */
+   left: 50%;
+
+   /* Offsets the heading to the left by 50% of its width for perfect centering */
+   transform: translateX(-50%);
+
+   /* Positions the heading absolutely within the layer */
+   position: absolute;
+
+   /* Sets the initial opacity to 0 (invisible) */
+   opacity: 0;
+
+   /* Adds a transition effect for changes in properties over 0.5 seconds */
+   transition: 0.5s;
+}
+
+/* The .layer:hover h3 selector makes the heading visible and moves it up slightly when the layer is hovered over. */
+.layer:hover h3 {
+   /* Moves the heading up slightly from the bottom */
+   bottom: 49%;
+
+   /* Sets the opacity to 1 (fully visible) */
+   opacity: 1;
+}
+
+/*------ Campus - End ------*/
