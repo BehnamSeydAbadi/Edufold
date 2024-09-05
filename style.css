@@ -500,6 +500,7 @@ h3 {
 
 /*------ Campus - End ------*/
 
+
 /*------ Facilities - Begin ------*/
 
 /* The .facilities class styles the main container for the facilities section. It sets the width to 80% of the parent element, centers it with auto margins, aligns text to the center, and adds 100 pixels of padding at the top. */
@@ -558,6 +559,7 @@ h3 {
 
 
 /*------ Facilities - End ------*/
+
 
 /*------ Testimonials - Begin ------*/
 
@@ -638,3 +640,54 @@ h3 {
 }
 
 /*------ Testimonials - End ------*/
+
+
+/*------ Call to action - Begin ------*/
+
+.cta {
+   /* Centers the call-to-action section with a margin of 100 pixels on the top and bottom, and auto on the left and right */
+   margin: 100px auto;
+
+   /* Sets the width of the call-to-action section to 80% of its parent container */
+   width: 80%;
+
+   /* Applies a linear gradient overlay with a dark color on top of a background image */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner2.jpg);
+
+   /* Centers the background image within the call-to-action section */
+   background-position: center;
+
+   /* Ensures the background image covers the entire section */
+   background-size: cover;
+
+   /* Rounds the corners of the call-to-action section with a radius of 10 pixels */
+   border-radius: 10px;
+
+   /* Aligns the text within the call-to-action section to the center */
+   text-align: center;
+
+   /* Adds 100 pixels of padding at the top and bottom of the call-to-action section */
+   padding: 100px 0;
+}
+
+.cta h1 {
+   /* Sets the text color of the heading to white */
+   color: #fff;
+
+   /* Adds a 40-pixel margin at the bottom of the heading */
+   margin-bottom: 40px;
+
+   /* Removes any default padding from the heading */
+   padding: 0;
+}
+
+@media(max-width:700px) {
+
+   /* Applies styles for screens that are 700 pixels wide or smaller */
+   .cta h1 {
+      /* Reduces the font size of the heading to 24 pixels */
+      font-size: 24px;
+   }
+}
+
+/*------ Call to action - End ------*/
