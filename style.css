@@ -558,3 +558,83 @@ h3 {
 
 
 /*------ Facilities - End ------*/
+
+/*------ Testimonials - Begin ------*/
+
+.testimonials {
+   /* Sets the width of the testimonials section to 80% of its parent container */
+   width: 80%;
+   /* Centers the testimonials section horizontally within its parent */
+   margin: auto;
+   /* Adds 100 pixels of padding at the top of the testimonials section */
+   padding-top: 100px;
+   /* Aligns the text within the testimonials section to the center */
+   text-align: center;
+}
+
+.testimonial-col {
+   /* Sets the base width of each testimonial column to 44% of the parent container */
+   flex-basis: 44%;
+
+   /* Rounds the corners of the testimonial column with a radius of 10 pixels */
+   border-radius: 10px;
+
+   /* Adds a 5% margin at the bottom of each testimonial column */
+   margin-bottom: 5%;
+
+   /* Aligns the text within the testimonial column to the left */
+   text-align: left;
+
+   /* Sets the background color of the testimonial column to a light pink */
+   background: #fff3f3;
+
+   /* Adds 25 pixels of padding inside the testimonial column */
+   padding: 25px;
+
+   /* Changes the cursor to a pointer when hovering over the testimonial column */
+   cursor: pointer;
+
+   /* Enables flexbox layout for the testimonial column */
+   display: flex;
+}
+
+.testimonial-col img {
+   /* Sets the height of the testimonial image to 40 pixels */
+   height: 40px;
+
+   /* Adds a 5-pixel margin to the left of the image */
+   margin-left: 5px;
+
+   /* Adds a 30-pixel margin to the right of the image */
+   margin-right: 30px;
+
+   /* Rounds the image to make it circular */
+   border-radius: 50%;
+}
+
+.testimonial-col p {
+   /* Removes any default padding from the paragraph inside the testimonial column */
+   padding: 0;
+}
+
+.testimonial-col h3 {
+   /* Adds a 15-pixel margin at the top of the heading inside the testimonial column */
+   margin-top: 15px;
+
+   /* Aligns the heading text to the left */
+   text-align: left;
+}
+
+@media(max-width: 700px) {
+
+   /* Applies styles for screens that are 700 pixels wide or smaller */
+   .testimonial-col img {
+      /* Removes the left margin from the image */
+      margin-left: 0px;
+
+      /* Reduces the right margin of the image to 15 pixels */
+      margin-right: 15px;
+   }
+}
+
+/*------ Testimonials - End ------*/
