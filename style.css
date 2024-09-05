@@ -691,3 +691,63 @@ h3 {
 }
 
 /*------ Call to action - End ------*/
+
+
+/*------ Footer - Begin ------*/
+
+.footer {
+   width: 100%;
+   text-align: center;
+   padding: 30px 0;
+}
+
+.footer:h4 {
+   margin-bottom: 25px;
+   margin-top: 20px;
+   font-weight: 600;
+}
+
+.footer span {
+   /* Sets the text color to a light gray */
+   color: #777;
+
+   /* Sets the font size to 14 pixels */
+   font-size: 14px;
+
+   /* Sets the font weight to light */
+   font-weight: 300;
+
+   /* Sets the line height to 22 pixels for better readability */
+   line-height: 22px;
+
+   /* Adds 10 pixels of padding around the paragraph */
+   padding: 10px;
+}
+
+.footer a {
+   text-decoration: none;
+
+   /* Sets the text color to a light gray */
+   color: #777;
+
+   /* Sets the font size to 14 pixels */
+   font-size: 14px;
+
+   /* Sets the font weight to light */
+   font-weight: 300;
+
+   /* Sets the line height to 22 pixels for better readability */
+   line-height: 22px;
+
+   /* Adds 10 pixels of padding around the paragraph */
+   padding: 10px;
+}
+
+.icons .fa-brands {
+   color: var(--red-color);
+   margin: 0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+}
+
+/*------ Footer - End ------*/
